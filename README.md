@@ -1,66 +1,70 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Opis Aplikacji
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Strona logowania
+Konto nauczyciela jest tworzone poprzez `TeacherSeeder.php`, a konta uczniów tworzy nauczyciel co będzie pokazane niżej.
+![Strona logowania](--screenshot--)
 
-## About Laravel
+## Strona główna nauczyciela
+Na której może przejść do zarządzania klasami, testami, zestawami pytań, użytkownikami i przeglądać wyniki uczniów z testów.
+![Strona główna nauczyciela](--screenshot--)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Strona do zarządzania klasami
+Które można edytować i usuwać.
+![Zarządzanie klasami](--screenshot--)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Kliknięcie w „Szczegóły” pokazuje uczniów przypisanych do klasy, jak i również można przypisać kolejnych uczniów.
+![Szczegóły klasy](--screenshot--)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Dodawanie nowej klasy.
+![Dodawanie nowej klasy](--screenshot--)
 
-## Learning Laravel
+## Strona do zarządzania testami
+Które można edytować i usuwać.
+![Zarządzanie testami](--screenshot--)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Dodawanie nowego testu.
+Należy ustalić nazwę testu, wybrać pytania z zestawu pytań danego nauczyciela, test można przypisać do jakiejś klasy lub do danego ucznia.
+![Dodawanie nowego testu](--screenshot--)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Strona do zarządzania pytaniami
+Które można edytować i usuwać.
+![Zarządzanie pytaniami](--screenshot--)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Dodawanie nowego pytania.
+Należy wpisać pytanie oraz 4 różne odpowiedzi, zaznaczając tylko jedną która jest prawidłowa.
+![Dodawanie nowego pytania](--screenshot--)
 
-## Laravel Sponsors
+## Strona do zarządzania użytkownikami
+Których można edytować i usuwać.
+![Zarządzanie użytkownikami](--screenshot--)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Dodawanie nowego użytkownika.
+Należy podać imię, maila i ustalić hasło.
+![Dodawanie nowego użytkownika](--screenshot--)
 
-### Premium Partners
+## Strona do przeglądania wyników uczniów
+Klas lub poszczególnego testu.
+![Przeglądanie wyników uczniów](--screenshot--)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Aby przeglądać wyniki danego ucznia należy wpisać jego email. Pokażą się wyniki dla testów ukończonych oraz przypisane testy ale jeszcze nie ukończone. Każdy test można rozwinąć klikając „Szczegóły” i sprawdzić poprawne i niepoprawne odpowiedzi ucznia.
+![Wyniki ucznia](--screenshot--)
 
-## Contributing
+Aby przeglądać wyniki poszczególnej klasy należy kliknąć „Pokaż testy”. Pokaże się każdy test przypisany do danej klasy z wynikiem procentowym, a klikając w „Pokaż szczegóły” , pokaże się informacja o wyniku danego ucznia lub jeśli jeszcze żaden uczeń nie podjął się rozwiązania testu to informacja „Żaden uczeń jeszcze nie podjął się tego testu.”
+![Wyniki klasy](--screenshot--)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Aby przeglądać wyniki poszczególnego testu należy kliknąć „Pokaż szczegóły” , pokaże się informacja o wyniku danego ucznia lub jeśli jeszcze żaden uczeń nie podjął się rozwiązania testu to informacja „Żaden uczeń jeszcze nie podjął się tego testu.”
+![Wyniki testu](--screenshot--)
 
-## Code of Conduct
+## Strona do edycji swojego profilu
+Możliwa wyłącznie dla nauczyciela.
+![Edycja profilu](--screenshot--)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Strona główna ucznia
+Pokazują się na niej dostępne testy podzielone na te przydzielone dla danego ucznia lub na całej klasy do której dany uczeń należy oraz przycisk do przeglądania swoich wyników testów.
+![Strona główna ucznia](--screenshot--)
 
-## Security Vulnerabilities
+Aby rozwiązać test należy kliknąć „Rozwiąż test”, uczeń przechodzi do testu i pokazują się od razu wszystkie pytania z danego testu, pytania i odpowiedzi za każdym razem są w innej kolejności. Po zakończeniu testu uczeń klika zapisz odpowiedzi, nie musi on zaznaczyć odpowiedzi przy każdym pytaniu, co wiąże się oczywiście z brakiem punktu. Pokazują się wynik testu i odpowiedzi: „Twoja odpowiedź – Poprawna” lub „Twoja odpowiedź – Niepoprawna” i przy poprawnej odpowiedzi „Poprawna odpowiedź”.
+![Rozwiązywanie testu](--screenshot--)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Klikając na stronie głównej ucznia w „Moje wyniki” uczeń może przeglądać swoje wyniki z testów przydzielone bezpośrednio do niego lub do klasy w której jest. Po kliknięciu w „Szczegóły” pokazuje się taki sam widok z odpowiedziami jak po ukończeniu testu.
+![Moje wyniki](--screenshot--)
